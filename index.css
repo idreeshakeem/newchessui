@@ -435,8 +435,6 @@ border-radius: 10px;
 margin-right: 20px;
 
 }
-.hero {
-  background-size: contain;  /* Adjusts image size to fit within the container */
-}
+
 
 } 
