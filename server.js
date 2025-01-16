@@ -38,8 +38,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/create-new-account", (req, res) => {
-  res.send("agaya")
-  //res.sendFile(path.join(__dirname, "public", "createnewacc.html"));
+ 
+res.sendFile(path.join(__dirname, "createnewacc.html"));
 });
 app.get("/login", (req, res) => {
   res.sendFile(__dirname + "/public/login.html");
