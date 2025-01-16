@@ -17,7 +17,7 @@ body {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background: url('images/background.png') no-repeat center center;
+    background: url('background.png') no-repeat center center;
     background-size: cover;
 }
 
