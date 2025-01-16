@@ -7,7 +7,7 @@ body {
     text-shadow: -1px -1px 0 #000000, /* Black shadow */ 1px -1px 0 #000000, /* Black shadow */ -1px 1px 0 #000000, /* Black shadow */ 1px 1px 0 #000000; /* Black shadow */
 
   }
-  
+   
   /* Hero Section */
   .hero {
     position: relative;
