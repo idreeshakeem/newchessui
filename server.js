@@ -7,8 +7,8 @@ const jwt = require("jsonwebtoken");
 
 const cookieParser = require("cookie-parser");
 const { log } = require("console");
-
-const redisClient = redis.createClient();
+const redisurl=redis://red-cu4eu4l6l47c73b2esig:6379
+const redisClient = redis.createClient({url:redisurl);
 // Connect to Redis
 redisClient
   .connect()
