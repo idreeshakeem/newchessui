@@ -17,7 +17,7 @@ body {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background: url('background.png') no-repeat center center;
+    background: url('images/background.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -435,8 +435,8 @@ border-radius: 10px;
 margin-right: 20px;
 
 }
-.features{
-    font-family: "Nunito", serif;
+.hero {
+  background-size: contain;  /* Adjusts image size to fit within the container */
 }
 
 } 

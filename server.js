@@ -7,8 +7,8 @@ const jwt = require("jsonwebtoken");
 
 const cookieParser = require("cookie-parser");
 const { log } = require("console");
-const redisurl=redis://red-cu4eu4l6l47c73b2esig:6379
-const redisClient = redis.createClient({url:redisurl);
+
+const redisClient = redis.createClient();
 // Connect to Redis
 redisClient
   .connect()
@@ -38,8 +38,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/create-new-account", (req, res) => {
- 
-res.sendFile(path.join(__dirname,"public", "createnewacc.html"));
+  res.sendFile(__dirname + "/public/createnewacc.html");
 });
 app.get("/login", (req, res) => {
   res.sendFile(__dirname + "/public/login.html");
@@ -64,6 +63,7 @@ app.post("/verifyotp", (req, res) => {
   const emailascookie = req.cookies.jwt;
   let verifyemail;
   try {
+    
     verifyemail = jwt.verify(emailascookie, jwtsecret);
     console.log("Decoded JWT payload (email):", verifyemail);
   } catch (err) {
