@@ -1,0 +1,128 @@
+body{
+    background-color:#051b33 ;
+    
+    }
+    .main{
+      width: 1510px;
+      height: 720px;
+      background-color:#051b33;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+    .container{
+      position:relative;
+      background-color: #040420;
+/*height:420px;
+      width:390px;*/
+      height:60%;
+      width:25%;
+    border:1px solid #00CED1 ;
+      border-radius:17px;
+    }
+    .container h3{
+      margin-left: 145px;
+    font-size: 25px;
+      color:#00CED1;
+      font-family: "Nunito", serif;
+      
+    }
+    .container p{
+    margin-left:30px;
+    font-size: 19px;
+      color:#00CED1;
+      font-family: "Nunito", serif;
+      
+    }
+    .container input{
+    margin-left:30px;
+    width:300px;
+      height:32px;
+      background-color:#01a5a7;
+      border-radius: 6px;
+      border: 1px solid #00CED1;
+      font-family: "Nunito", serif;
+    
+    }
+    
+    .container input::placeholder{
+      color:black;
+    padding-left: 4px;
+    font-family: "Nunito", serif;
+    }
+    #forget a{
+      text-decoration: none;
+      color:grey;
+
+    }
+    #forget a:hover{
+      cursor: pointer;
+      font-size: large;
+      color:#8fbc8f;
+      transition: 500ms linear;
+    }
+    #forget{
+      
+    
+      margin-left: 33px;
+      position: absolute;
+      left:7px;
+    top:284px;
+    font-family: "Nunito", serif;
+      
+    }
+    .container button{
+      background-color:#0cb0b0;
+      position: absolute;
+      left: 30px;
+      top:320px;
+      width:90px;
+      height:36px;
+      border-radius: 9px;
+      font-size: 15px;
+      border: none;
+    }
+    .container button:hover{
+     
+       background-color:#00fbff; 
+font-size: small;
+       cursor: pointer;
+      transition:400ms linear ;
+      font-family: "Nunito", serif;
+    }
+    #sign{
+      color: #00fbff;
+      position: absolute;
+      right: 50px;
+      top: 276px;
+      font-family: "Nunito", serif;
+    }
+    #newacc{
+      color:grey;
+      margin-left: 113px;
+      position: absolute;
+      left:9px;
+    top:369px;
+      font-size:18px;
+      font-family: "Nunito", serif;
+    }
+    #newacc a{
+    text-decoration: none;
+        color:grey;
+    }
+    #newacc a:hover{
+      color:#8fbc8f;
+      text-decoration: underline;
+      transition:800ms linear ;
+    }
+    #error{
+      color:#B01030;
+      position: absolute;
+      right:98px;
+      top:392px;
+      font-size:17px ;
+    }
+    #icon{
+      color:red
+    }
+  

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="otp.css">
+    <script src="otp.js"></script>
+</head>
+<body>
+    <section class="hero">
+        <div class="form-container">
+            <h1>Verify Your OTP</h1>
+            <p>Enter the 6-digit code sent to your registered Email.</p>
+            <form>
+                <div class="otp-inputs">
+                    <input type="text" maxlength="1" id="otp1" oninput="moveNext(this, 'otp2')" onkeydown="moveBack(event, null)">
+                    <input type="text" maxlength="1" id="otp2" oninput="moveNext(this, 'otp3')" onkeydown="moveBack(event, 'otp1')">
+                    <input type="text" maxlength="1" id="otp3" oninput="moveNext(this, 'otp4')" onkeydown="moveBack(event, 'otp2')">
+                    <input type="text" maxlength="1" id="otp4" oninput="moveNext(this, 'otp5')" onkeydown="moveBack(event, 'otp3')">
+                    <input type="text" maxlength="1" id="otp5" oninput="moveNext(this, 'otp6')" onkeydown="moveBack(event, 'otp4')">
+                    <input type="text" maxlength="1" id="otp6" onkeydown="moveBack(event, 'otp5')">
+                </div>
+                <button type="submit" id="button">Verify</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Function to move to the next input box
+        function moveNext(current, nextId) {
+            if (current.value) {
+                document.getElementById(nextId)?.focus();
+            }
+        }
+
+        // Function to move to the previous input box when backspace is pressed
+        function moveBack(event, prevId) {
+            if (event.key === "Backspace" && !event.target.value) {
+                document.getElementById(prevId)?.focus();
+            }
+        }
+    </script>
+</body>
+</html>
