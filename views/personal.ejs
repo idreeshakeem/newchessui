@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Hub Dashboard</title>
+  <link rel="stylesheet" href="/personal.css">    
+</head>
+<body>
+  <div class="wrapper">
+        <!-- Chessify Label -->
+        <div class="chessify-label" id ="logo">
+          <h1>Chessify</h1>
+        </div>
+        <button id="logout">Logout</button>
+    <!-- Profile Section -->
+    <div class="profile-container">
+      
+      <div class="profile-card">
+        <h1 class="greeting">Hello, <%=userdetail.username %> 👋</h1>
+        <p class="joined">Joined on:  <%=userdetail.date %></p>
+      </div>
+    </div>
+
+    <!-- Wallet Section -->
+    <div class="wallet-container">
+      <div class="wallet-card">
+        <h2>Wallet Balance</h2>
+        <span ><img id="moneyimage"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFA09L_1ilSJwUJxoyfUueEdOHnSV6IbWgrB97id9iShX0PmH9vYOpY23Wb9Q2aIUzHU&usqp=CAU" alt="image"></span>
+        <p class="balance">₹<%=userdetail.walletBalance %></p>
+        <div class="actions">
+          <button class="btn add-btn" onclick="location.href='/add-money'">Add Money</button>
+          <button class="btn withdraw-btn" onclick="location.href='/withdraw-money'">Withdraw</button>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Game Options Section -->
+    <div class="game-options">
+      <h2>Play</h2>
+      <button class="btn random-btn" onclick="location.href='/random-match'">Random Match</button>
+      <button class="btn friend-btn" onclick="location.href='/play-with-friend'">Play with Friend</button>
+    </div>
+  </div>
+</body>
+
+<script src="/personal.js"></script>
+
+</html>

@@ -1,0 +1,277 @@
+/* body{
+    background-color:#051b33 ;
+    
+    }
+    .main{
+      width: 1510px;
+      height: 720px;
+      background-color:#051b33;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+    .container{
+      position:relative;
+      background-color: #040420;
+/*height:420px;
+      width:390px;*/
+      /* height:60%;
+      width:25%;
+    border:1px solid #00CED1 ;
+      border-radius:17px;
+    }
+    .container h3{
+      margin-left: 145px;
+    font-size: 25px;
+      color:#00CED1;
+      font-family: "Nunito", serif;
+      
+    }
+    .container p{
+    margin-left:30px;
+    font-size: 19px;
+      color:#00CED1;
+      font-family: "Nunito", serif;
+      
+    }
+    .container input{
+    margin-left:30px;
+    width:300px;
+      height:32px;
+      background-color:#01a5a7;
+      border-radius: 6px;
+      border: 1px solid #00CED1;
+      font-family: "Nunito", serif;
+    
+    }
+    
+    .container input::placeholder{
+      color:black;
+    padding-left: 4px;
+    font-family: "Nunito", serif;
+    }
+    #forget a{
+      text-decoration: none;
+      color:grey;
+
+    }
+    #forget a:hover{
+      cursor: pointer;
+      font-size: large;
+      color:#8fbc8f;
+      transition: 500ms linear;
+    }
+    #forget{
+      
+    
+      margin-left: 33px;
+      position: absolute;
+      left:7px;
+    top:284px;
+    font-family: "Nunito", serif;
+      
+    }
+    .container button{
+      background-color:#0cb0b0;
+      position: absolute;
+      left: 30px;
+      top:320px;
+      width:90px;
+      height:36px;
+      border-radius: 9px;
+      font-size: 15px;
+      border: none;
+    }
+    .container button:hover{
+     
+       background-color:#00fbff; 
+font-size: small;
+       cursor: pointer;
+      transition:400ms linear ;
+      font-family: "Nunito", serif;
+    }
+    #sign{
+      color: #00fbff;
+      position: absolute;
+      right: 50px;
+      top: 276px;
+      font-family: "Nunito", serif;
+    }
+    #newacc{
+      color:grey;
+      margin-left: 113px;
+      position: absolute;
+      left:9px;
+    top:369px;
+      font-size:18px;
+      font-family: "Nunito", serif;
+    }
+    #newacc a{
+    text-decoration: none;
+        color:grey;
+    }
+    #newacc a:hover{
+      color:#8fbc8f;
+      text-decoration: underline;
+      transition:800ms linear ;
+    }
+    #error{
+      color:#B01030;
+      position: absolute;
+      right:98px;
+      top:392px;
+      font-size:17px ;
+    }
+    #icon{
+      color:red
+    }
+   */  
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #051b33; /* Dark blue/teal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Login Box */
+.container {
+  background-color: #040420; /* Dark purple */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 280px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+#logo a{
+
+  color:#00fbff;
+  float: left;
+  font-size: 16px;
+  font-family: ''Nunito', sans-serif';
+  text-decoration: none;
+}
+#logo a:hover{
+  text-decoration: underline;
+  color:#8fbc8f;
+}
+/* Heading */
+h3 {
+  color: #00CED1; /* Light turquoise */
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* Label Text */
+p {
+  color: #00CED1;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  background-color: #01a5a7; /* Teal background */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #a3d6d6; /* Light gray for placeholders */
+}
+
+/* Focus State for Inputs */
+input:focus {
+  border-color: #00fbff; /* Light cyan for focus */
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  width: 30%;
+  padding: 12px;
+  background-color: #0cb0b0; /* Darker teal */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00fbff; /* Light cyan on hover */
+  color: #040420; /* Dark purple text on hover */
+}
+
+
+#forget a{
+text-decoration: none;
+color:#00CED1;
+
+}
+#forget a:hover{
+  color:#8fbc8f;
+}
+
+/* Link - Create Account */
+#newacc {
+  display: block;
+  margin-top: 15px;
+  color: #8fbc8f; /* Light green */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#newacc a {
+  color: #8fbc8f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#newacc a:hover {
+  color: #00fbff; /* Light cyan on hover */
+  text-decoration: underline;
+}
+
+/* Error Message */
+#error {
+  color: #B01030; /* Red for errors */
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

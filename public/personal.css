@@ -1,0 +1,366 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #181818; /* Dark background */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.3s ease;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #1a1a1a, #141414); /* Soft dark gradient */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-out;
+  }
+  #logo{
+    font-size: 0.7rem;
+    color: #4caf50; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Add some shadow for emphasis */
+
+  }
+  
+  
+  /* Profile Section */
+  .profile-container {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .profile-card {
+    background: linear-gradient(145deg, #2d3436, #212121); /* Sleek gradient */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-8px); /* Hover effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .greeting {
+    font-size: 2rem;
+    color: #ff6f61; /* Soft coral color for text */
+  }
+  
+  .joined {
+    font-size: 1.1rem;
+    color: #a5a5a5; /* Light gray for subtle text */
+    margin-top: 15px;
+  }
+  
+  /* Wallet Section */
+  .wallet-container {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .wallet-card {
+    background: linear-gradient(145deg, #2d3436, #212121);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .wallet-card:hover {
+    transform: translateY(-8px); /* Hover effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .wallet-card h2 {
+    font-size: 1.8rem;
+    color: #f39c12; /* Warm yellow accent */
+    margin-bottom: 15px;
+  }
+  
+  .balance {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-btn {
+    background-color: #4caf50; /* Fresh green */
+    color: white;
+  }
+  
+  .add-btn:hover {
+    background-color: #66bb6a; /* Slightly lighter green */
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.6);
+  }
+  
+  .withdraw-btn {
+    background-color: #f44336; /* Bold red */
+    color: white;
+  }
+  
+  .withdraw-btn:hover {
+    background-color: #e53935; /* Slightly darker red */
+    box-shadow: 0 6px 15px rgba(244, 67, 54, 0.6);
+  }
+  
+  /* Game Options Section */
+  .game-options {
+    text-align: center;
+  }
+  
+  .game-options h2 {
+    font-size: 1.8rem;
+    color: #f39c12;
+    margin-bottom: 25px;
+  }
+  
+  .game-options .btn {
+    width: 220px;
+    margin: 12px;
+  }
+  
+  .random-btn {
+    background-color: #2980b9; /* Soft blue */
+    color: white;
+  }
+  
+  .random-btn:hover {
+    background-color: #3498db; /* Lighter blue */
+    transform: scale(1.05);
+  }
+  
+  .friend-btn {
+    background-color: #9b59b6; /* Soft purple */
+    color: white;
+  }
+  
+  .friend-btn:hover {
+    background-color: #8e44ad; /* Darker purple */
+    transform: scale(1.05);
+  }
+  #moneyimage{
+width:130px;
+height:130px;
+position: relative;
+left:40%;
+bottom:40px;
+border-radius:12px;
+
+  }
+
+#logout{
+  height: 40px;
+  width:110px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ margin-left: 85%;
+ margin-bottom: 14px;
+ background-color: #e74c3c;
+ color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Soft shadow for text contrast */
+}
+#logout:hover{
+background-color: #e57373 ;
+box-shadow: 0 6px 15px rgba(231, 76, 60, 0.6);
+
+}
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes hoverEffect {
+    0% {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .wrapper {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .profile-card, .wallet-card {
+      padding: 20px;
+    }
+  
+    .greeting {
+      font-size: 1.6rem;
+    }
+  
+    .joined {
+      font-size: 1rem;
+    }
+  
+    .wallet-card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .balance {
+      font-size: 2.2rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .game-options h2 {
+      font-size: 1.6rem;
+    }
+  
+    .game-options .btn {
+      width: 180px;
+      margin: 8px;
+    }
+    #logo{
+font-size: 0.5rem;
+
+    }
+    #moneyimage{
+      position: relative;
+      width:80px;
+      height:70px;
+      left:140px;
+      
+                }
+                #logout{
+
+                  margin-left: 70%;
+
+                }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 0 10px;
+    }
+  
+    .wrapper {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .profile-card, .wallet-card {
+      padding: 15px;
+    }
+  
+    .greeting {
+      font-size: 1.4rem;
+    }
+  
+    .joined {
+      font-size: 0.9rem;
+    }
+  
+    .wallet-card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .balance {
+      font-size: 1.8rem;
+    }
+  
+    .actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    .game-options h2 {
+      font-size: 1.4rem;
+    }
+  
+    .game-options .btn {
+      width: 160px;
+      margin: 6px;
+    }
+    #logo{
+      font-size: 0.4rem;
+      
+          }
+          #moneyimage{
+position: relative;
+width:80px;
+height:70px;
+left:140px;
+
+          }
+          
+
+    #logout{
+margin-left: 67%;
+margin-bottom: 15px;
+
+    }      
+  }
+  

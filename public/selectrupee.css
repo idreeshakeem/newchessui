@@ -1,0 +1,115 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2f; /* Deep dark gray */
+    color: #f5f5f5; /* Light text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 15px;
+    background: #2b2b3d; /* Slightly lighter dark gray for contrast */
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.5), 
+        inset 0 0 10px rgba(255, 255, 255, 0.02);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.2),
+        0 0 15px rgba(75, 85, 255, 0.3); /* Blue glow */
+}
+
+/* Subheader */
+p {
+    font-size: 1.1rem;
+    color: #cccccc; /* Softer gray */
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Amount Buttons */
+.amount-button {
+    background: #36364a; /* Neutral dark gray for buttons */
+    color: #d1af6f; /* Muted gold text */
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.5),
+        inset 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Button Hover */
+.amount-button:hover {
+    background: #444466; /* Slightly brighter gray */
+    color: #ffffff; /* White text */
+    transform: scale(1.05);
+    box-shadow: 
+        0 5px 15px rgba(75, 85, 255, 0.4), /* Blue glow */
+        inset 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Active State */
+.amount-button:active {
+    transform: scale(1);
+    background: #57577a; /* Deeper contrast */
+    box-shadow: 
+        inset 0 0 10px rgba(0, 0, 0, 0.5),
+        0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Background Glow */
+body:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 1200px;
+    background: radial-gradient(circle, rgba(75, 85, 255, 0.1), rgba(0, 0, 0, 0.8));
+    transform: translate(-50%, -50%);
+    filter: blur(200px);
+    z-index: -1;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
